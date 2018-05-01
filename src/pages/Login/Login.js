@@ -43,7 +43,7 @@ export class Login extends React.PureComponent {
     } = this.props;
 
     if (user) {
-      const { from } = location.state || { from: { pathname: '/home' } };
+      const { from } = location.state || { from: { pathname: '/' } };
       return <Redirect to={from}/>;
     }
 
